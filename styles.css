@@ -4,3 +4,31 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+body {
+    background-color: #f6f7fb;
+    color: #2c2c2c;
+}
+
+.header{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo .icon{
+    color: #e0388b;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo h1{
+    color: #333;
+    font-weight: 700;
+}
