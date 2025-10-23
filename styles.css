@@ -80,3 +80,31 @@ body {
 .add-item button:hover{
     background-color: #c53680;
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.list li {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.list input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
