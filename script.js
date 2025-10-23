@@ -37,6 +37,6 @@ button.addEventListener("click", (event) => {
 const alertaDelete = document.querySelector(".close");
 
 alertaDelete.addEventListener("click", () => {
-  const alerta = document.querySelector(".alert");
+const alerta = document.querySelector(".alert");
   alerta.style.display = "none";
 });
