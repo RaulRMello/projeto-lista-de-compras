@@ -31,7 +31,11 @@ button.addEventListener("click", (event) => {
       const alerta = document.querySelector(".alert");
       alerta.style.display = "flex"; // Mostra o alerta
     });
-    input.value = "" 
+    input.value = ""
+    checkbox.addEventListener("change", () => {
+        lista.classList.toggle("marcado", checkbox.checked)
+});
+ 
 }
 });
 const alertaDelete = document.querySelector(".close");
@@ -40,3 +44,12 @@ alertaDelete.addEventListener("click", () => {
 const alerta = document.querySelector(".alert");
   alerta.style.display = "none";
 });
+// Detecta cliques em qualquer checkbox dentro da lista
+document.querySelector(".list").addEventListener("change", (event) => {
+  // Verifica se o elemento clicado é um checkbox
+  if (event.target.matches("input[type='checkbox']")) {
+    const li = event.target.closest("li");
+    li.classList.toggle("marcado", event.target.checked);
+  }
+});
+
