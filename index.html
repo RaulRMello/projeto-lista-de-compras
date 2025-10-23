@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickList</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">
-            <span class="icon">≡</span>
-            <h1>quicklist</h1>
-        </div>
+      <div class="logo">
+        <span class="icon">≡</span>
+        <h1>quicklist</h1>
+      </div>
     </header>
 
-     <main class="container">
-        <a href="#" class="back">&larr; Voltar</a>
+    <main class="container">
+      <a href="#" class="back">&larr; Voltar</a>
 
-        <h2>Compras da semana</h2>
+      <h2>Compras da semana</h2>
 
-        <div class="add-item">
-            <input type="text" id="item" placeholder="Adicione um novo item">
-            <button id="adiciona-item" >Adicionar item</button>
-        </div>
-        <ul class="list">
-      <li>
-        <label><input type="checkbox"> Pão de forma</label>
-        <button class="delete">&times;</button>
-      </li>
-      <li>
-        <label><input type="checkbox"> Café preto</label>
-        <button class="delete">&times;</button>
-      </li>
-      <li>
-        <label><input type="checkbox"> Suco de laranja</label>
-        <button class="delete">&times;</button>
-      </li>
-      <li>
-        <label><input type="checkbox"> Bolacha</label>
-        <button class="delete">&times;</button>
-      </li>
-    </ul>
-    <div class="alert">
-      <span>⚠️ O item foi removido da lista</span>
-      <button class="close">&times;</button>
-    </div>
+      <div class="add-item">
+        <input type="text" id="item" placeholder="Adicione um novo item" />
+        <button id="adiciona-item">Adicionar item</button>
+      </div>
+      <ul class="list">
+        <li>
+          <label><input type="checkbox" /> Pão de forma</label>
+          <button class="delete">&times;</button>
+        </li>
+        <li>
+          <label><input type="checkbox" /> Café preto</label>
+          <button class="delete">&times;</button>
+        </li>
+        <li>
+          <label><input type="checkbox" /> Suco de laranja</label>
+          <button class="delete">&times;</button>
+        </li>
+        <li>
+          <label><input type="checkbox" /> Bolacha</label>
+          <button class="delete">&times;</button>
+        </li>
+      </ul>
+      <div class="alert">
+        <span>⚠️ O item foi removido da lista</span>
+        <button class="close">&times;</button>
+      </div>
     </main>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
